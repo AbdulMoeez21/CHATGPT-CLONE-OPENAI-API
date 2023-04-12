@@ -1,8 +1,8 @@
 import React from "react";
 
-const Translation = ({ doStuff, setInput , result }) => {
+const Translation = ({ doStuff, setInput,result  }) => {
   return (
-    <>
+    <div className="main-translate">
      <textarea
         className="text-area"
         cols={55}
@@ -13,8 +13,8 @@ const Translation = ({ doStuff, setInput , result }) => {
       <button className="action-btn" onClick={doStuff}>
         DO YOU STUFF !!
       </button>
-      {/* <h3 className="result-text">{result.length > 0 ? result : ""}</h3> */}
-    </>
+      <h3 className="result-text">{result.length > 0 ? result : ""}</h3>
+    </div>
   );
 };
 
